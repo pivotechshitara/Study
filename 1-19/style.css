@@ -1,0 +1,108 @@
+/* Reset & box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+.header {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  background: #FFCE7a;
+}
+.header-label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.header-right-frame {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 160px;
+  height: 60px;
+  background: #ffffff;
+  padding: 10px; /* 内側余白 */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-box {
+  width: 40px;
+  height: 40px;
+  background: #C2FFC8;
+  border-radius: 2px;
+}
+.main {
+  width: 400px;
+  height: 250px;
+  display: flex;
+}
+.left {
+  width: 150px;
+  height: 250px;
+  background: #9DDDF4;
+  display: flex;
+  font-weight: 700;
+}
+.right {
+  width: 250px;
+  height: 250px;
+  background: #C2FFC8;
+  /* 左上下 40px、右 60px を指定（画像の余白に合わせる） */
+  padding: 40px 60px 40px 40px;
+  box-sizing: border-box;
+}
+
+/* 右のピンクの縦並び */
+.right-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start; /* 白枠は左寄せ */
+}
+
+/* 白い枠（140 x 50） — 内側 padding:5 でピンク（120x40）を中央に */
+.white-frame {
+  width: 150px;
+  height: 50px;
+  background: #ffffff;
+  padding: 5px; /* 上下5 + 左右5 → 内側コンテンツ領域 */
+  display: flex;
+  box-sizing: border-box;
+}
+.pink-box {
+  width: 140px;
+  height: 40px;
+  background: #FFC2C5;
+}
+.left-label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.footer {
+  width: 400px;
+  height: 100px;
+  background: #BEA5FF;
+  display: flex;
+  font-weight: 700;
+}
+.footer-label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #ffffff;
+  font-weight: 700;
+}
+

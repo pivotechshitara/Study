@@ -1,0 +1,51 @@
+/* 479px 以下のときのレイアウト */
+@media (max-width: 479px) {
+.wrapper {
+    width: 200px;
+}
+.header {
+    width: 200px;
+    height: auto;
+    padding: 20px 0;
+}
+/* ヘッダー右の白い枠を縦並びに変更 */
+.header-right-frame {
+    position: static;
+    width: 60px;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto; /* 中央寄せ */
+}
+.green-box {
+    width: 40px;
+    height: 40px;
+}
+.main {
+    flex-direction: column; /* 左右分割から縦積みへ */
+    width: 200px;
+    height: auto;
+}
+.left {
+    width: 200px;
+    height: 100px;
+}
+.right {
+    width: 200px;
+    height: auto;
+    
+}
+.white-frame {
+    width: 140px;
+    height: 50px;
+    margin-left: 30px;
+}
+.pink-box {
+    width: 140px;
+    height: 40px;
+}
+.footer {
+    width: 200px;
+    height: 100px;
+}
+}
