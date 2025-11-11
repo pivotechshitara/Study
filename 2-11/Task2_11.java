@@ -42,9 +42,9 @@ public class Task2_11 {
                 index++;
             }
         }
-    System.out.print("1から20までの偶数: ");
+    System.out.println("1から20までの偶数: ");
         for (int i = 0; i < evenNumbers.length; i++) {
-            System.out.print(evenNumbers[i] + " ");
+            System.out.println(evenNumbers[i] + " ");
         }
         System.out.println();
 
