@@ -44,9 +44,9 @@ int[] intArray = { 10, 20, 30, 40, 50 };
 
 
 // ⑥下記の処理について、何をしているのかコメントを記入して下さい。
-// [最初の要素(10)と最後の要素(50)を足すと]
-System.out.println(intArray[0] + intArray[4]);
+// [最初の要素(10)と最後の要素(50)を足すと60]
 
+System.out.println(intArray[0] + intArray[4]);
 
 }
 }

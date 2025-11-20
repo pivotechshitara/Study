@@ -64,3 +64,5 @@ System.out.println(train); 中央線
 
 }
 }
+
+
