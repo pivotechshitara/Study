@@ -20,6 +20,6 @@ public class Task2_20 {
         //⑦オーバーロードされたargumentメソッドを呼び出し解答画像になるように出力して下さい。
             child.argument();
             child.argument(1);
-            child.argument(2);
+            child.argument( 1, 1);
     }
 }
