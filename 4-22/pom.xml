@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>spring_subject</artifactId>
+	<artifactId>4-22</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring_subject</name>
+	<name>4-22</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -90,15 +90,12 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.11.0</version>
 				<configuration>
 					<annotationProcessorPaths>
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</path>
-						<source>17</source>
-						<target>17</target>
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>タスク登録 / 編集</h1>
+
+<form th:action="@{/tasks}" th:object="${task}" method="post">
+
+    <input type="hidden" th:field="*{taskId}" />
+
+    タスク名：
+    <input type="text" th:field="*{taskName}" />
+    <div th:if="${#fields.hasErrors('taskName')}"
+         th:errors="*{taskName}"></div>
+
+    <br/>
+
+    状況：
+    <input type="text" th:field="*{taskStatus}" />
+    <div th:if="${#fields.hasErrors('taskStatus')}"
+         th:errors="*{taskStatus}"></div>
+
+    <br/>
+
+    開始日：
+    <input type="date" th:field="*{startDate}" />
+
+    <br/>
+
+    完了日：
+    <input type="date" th:field="*{endDate}" />
+
+    <br/>
+
+    <button type="submit">保存</button>
+
+</form>
+
+</body>
+</html>

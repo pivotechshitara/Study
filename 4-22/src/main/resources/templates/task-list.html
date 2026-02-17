@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>タスク一覧</h1>
+
+<a th:href="@{/tasks/new}">新規登録</a>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>名前</th>
+        <th>状況</th>
+        <th>操作</th>
+    </tr>
+    <tr th:each="task : ${tasks}">
+        <td th:text="${task.taskId}"></td>
+        <td th:text="${task.taskName}"></td>
+        <td th:text="${task.taskStatus}"></td>
+        <td>
+            <a th:href="@{/tasks/edit/{id}(id=${task.taskId})}">編集</a>
+            <a th:href="@{/tasks/delete/{id}(id=${task.taskId})}">削除</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
